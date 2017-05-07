@@ -62,3 +62,9 @@ p {
 .welcome {
 	font-size: 16;
 }
+
+.godol:h1 {
+	color: Black;
+	font-family: Arial;
+	text-align: center;
+	font-size: 24px;
