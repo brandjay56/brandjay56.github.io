@@ -16,7 +16,7 @@ body {
     width: 100%;
 }
 
-nav:li {
+.nav li {
     float: left;
 	font-family: Helvetica;
 	color: white;
