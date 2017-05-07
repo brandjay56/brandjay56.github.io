@@ -16,7 +16,7 @@ body {
     width: 100%;
 }
 
-.nav li {
+nav:li {
     float: left;
 	font-family: Helvetica;
 	color: white;
@@ -62,9 +62,3 @@ p {
 .welcome {
 	font-size: 16;
 }
-
-/*h1.godol {
-	color: Black;
-	font-family: Arial;
-	text-align: center;
-	font-size: 24px;*/
