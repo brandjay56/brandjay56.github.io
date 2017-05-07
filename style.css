@@ -4,7 +4,7 @@ body {
   padding: 0;
 }
 
-.nav ul {
+ul.nav {
     list-style-type: none;
     margin: 0;
     padding: 14px 0px;
@@ -16,7 +16,7 @@ body {
     width: 100%;
 }
 
-.nav li {
+li.nav {
     float: left;
 	font-family: Helvetica;
 	color: white;
@@ -34,7 +34,7 @@ li:last-child {
 
 }
 
-.nav a:hover, a:active {
+ a:hover.nav, a:active.nav {
     background-color: Red;
 	color: Gainsboro;
 }
@@ -63,7 +63,7 @@ p {
 	font-size: 16;
 }
 
-.godol:h1 {
+h1.godol {
 	color: Black;
 	font-family: Arial;
 	text-align: center;
