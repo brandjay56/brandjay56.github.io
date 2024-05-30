@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bdotmoser - Technology and Music Consulting</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="bdotmoser Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#clients">Our Clients</a></li>
+                <li><a href="#services">Our Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to bdotmoser, your trusted partner in technology and music consulting. With a deep understanding of the industry's complexities and trends, we provide innovative solutions that drive success for our clients. Our expertise spans across the technology and music sectors, enabling us to offer unparalleled insights and strategies.</p>
+        </section>
+        <section id="clients" class="clients">
+            <h2>Our Clients</h2>
+            <div class="client-logos">
+                <img src="images/spotify.png" alt="Spotify">
+                <img src="images/apple.png" alt="Apple">
+                <img src="images/umg.png" alt="Universal Music Group (UMG)">
+                <img src="images/sony.png" alt="Sony Music Group">
+            </div>
+        </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <h3>Technology Consulting</h3>
+                    <p>From system integration to digital transformation, we provide comprehensive tech consulting services tailored to your needs.</p>
+                </div>
+                <div class="card">
+                    <h3>Music Consulting</h3>
+                    <p>We offer expert advice on everything from artist development to music distribution, helping you navigate the ever-changing music landscape.</p>
+                </div>
+                <div class="card">
+                    <h3>Strategic Planning</h3>
+                    <p>Our strategic planning services ensure that your projects are aligned with your business objectives and positioned for long-term success.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Ready to take your business to the next level? Contact us today to learn more about how bdotmoser can help you achieve your goals.</p>
+            <p><strong>Email:</strong> info@bdotmoser.com</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 bdotmoser. All rights reserved.</p>
+    </footer>
+    <script>
+        $(document).ready(function(){
+            $('nav a').on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top - 100
+                    }, 800, function(){
+                        window.location.hash = hash - 100;
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
